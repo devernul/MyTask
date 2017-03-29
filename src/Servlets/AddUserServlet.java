@@ -22,6 +22,9 @@ public class AddUserServlet extends HttpServlet {
 		controller.connectToDataBase();
 		controller.insertRow(name);
 
+		/*
+		* Где мы вызываем destroy метод?
+		*/
 		response.sendRedirect(request.getContextPath() + "/main.jsp");
 	}
 

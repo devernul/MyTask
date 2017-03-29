@@ -18,7 +18,11 @@
 			type="submit" value="Поиск" name="search">
 	<input type="button" value="Добавить нового пользователя" onClick="location.href='http://localhost:8080/MyTask/addUser.jsp'">
 	
-		<%
+		<%/*
+			Логику и отображение необходимо разделить, логику в пакет logic с обращением через servlet,ну а отображение можно и println ом выводить,
+			но лучше всеже поглуюже изучить возможности jsp-jstl,
+			а еще лучше spring MVC либо JSF либо JS библиотеку+HTML использовать/
+		*/
 			DataBaseController controller = new DataBaseController();
 			controller.connectToDataBase();
 

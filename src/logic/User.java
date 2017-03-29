@@ -1,12 +1,13 @@
 package logic;
 
-
+/*Почему в пакете logic? Логичнее entity или model*/
 public class User {
 
 	private int id;
 	private String name;
 
 	public User(int id, String name) {
+		/*ToDo:Зачем super?*/
 		super();
 		this.id = id;
 		this.name = name;
